@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yashwanth's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/97f809e348.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Images/final-logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <!-- <li><a href="#projects">Experience</a></li> -->
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <!-- <p> Data Scientist</p> -->
+                <h1>Hi, I'm <span>Yashwanth Tadakamalla</span><br>From Germany</h1>
+                <!-- <div class="text-animate">
+                    <h3>Data Scientist</h3>
+                </div> -->
+                <div class="btn-box">
+                    <a href="#contact" class="btn_new">Hire Me</a>
+                    <a href="#contact" class="btn_new">Let's Talk</a>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- /*--------------------------------about me ----------------------- */ -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/me.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>A creative proactive, and pragmatic Data Science enthusiast who is familiar with the processes for
+                        gathering, cleaning, and organizing data to support the company's transformation into a data-driven
+                        business model. Advanced understanding of statistical and machine learning techniques, and experience in
+                        identifying opportunities and strategizing methods for improvement.</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('Education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="Skills">
+                            <ul>
+                                <li><span>Programming Languages :</span><br> Python, R, SQL, Scala</li>
+                                <li><span>Tools :</span><br> Power BI, Power Query, CI/CD, PowerApps, MS Office, MS Excel, Git, Azure, Streamlit, Docker, Agile
+                                    Project Management, Jupyter Notebooks</li>
+                                <li><span>Machine Learning :</span><br> Time Series Analysis, Computational Argumentation, NLP language models (BERT, spaCy),
+                                    Large Language Models (LLM), Pandas, Numpy, Pytorch, Tensorflow, Scikit - learn, Keras, Apache Spark</li>
+                                <li><span>Data Analysis and Visualization :</span><br> Data Mining, Data Modeling, Data Pre-processing, Image Classification,
+                                    Exploratory Data Analysis (EDA), Tableau, Dashboard Creation, Matplotlib, Seaborn</li>
+                                <li><span>Web Development :</span><br> HTML, CSS, Javascript, Flask, Streamlit</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Experience">
+                            <ul class="experience-list">
+                                <li>
+                                    <span class="company-name">Ernst & Young</span>
+                                    <span class="duration">(Nov 2021 - July 2023)</span>
+                                    <ul class="bullet-points">
+                                        <li>Spearheaded exploratory data analysis, contributing to the training, testing, and implementation of a BERT model for automatic job requirements and resume matching.</li>
+                                        <li>Conducted meticulous data labeling and cleaning, elevating data quality and significantly enhancing the accuracy of subsequent analyses and models.</li>
+                                        <li>Independently designed and deployed a Chatbot using Power Virtual Agent.</li>
+                                        <li>Showcased expertise in AI through various demonstrations, such as creating an automatic code-commenting system and an interview bot utilizing the OpenAI API.</li>
+                                        <li>Ensured comprehensive project documentation, documenting all software development processes and results for future reference and knowledge sharing.</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <span class="company-name">SayCheese</span>
+                                    <span class="duration">(Jan 2019 - June 2019)</span>
+                                    <ul class="bullet-points">
+                                        <li>Employed descriptive and diagnostic analysis to identify patterns and predict likely outcomes.</li>
+                                        <li>Prepared and delivered reports to management using PowerBI, providing valuable insights from data analysis.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Education">
+                            <ul class="education-list">
+                                <li>
+                                    <span class="university-name">Paderborn University <br></span>
+                                    <span class="degree">Master of Computer Science</span>
+                                    <span class="duration">(2019 - 2023)</span>
+                                    <li>Interactive Data Visualization</li><br>
+                                    <li>High-Performance Computing</li><br>
+                                    <li>Design and Code Analysis</li><br>
+                                    <li>Model-Based Systems Engineering</li><br>
+                                    <li>Machine Learning</li><br>
+                                    <li>Advanced Computer Architecture</li><br>
+                                    <li>Software Quality Assurance</li>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------------------------------projects------------------------ -->
+    <!-- <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="projects-list">
+                <div>
+                    <h2>Master Thesis</h2>
+                    <p>Identified key performance indicators (KPIs) relevant to sales, such as revenue, sales growth, customer
+                        acquisition, and product performance.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <h2>BERT for CV AFO Matching</h2>
+                    <p>Identified key performance indicators (KPIs) relevant to sales, such as revenue, sales growth, customer
+                        acquisition, and product performance.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <h2>CV - Named Entity Recognition (NER)</h2>
+                    <p>Identified key performance indicators (KPIs) relevant to sales, such as revenue, sales growth, customer
+                        acquisition, and product performance.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <h2>Comment Your Code</h2>
+                    <p>Identified key performance indicators (KPIs) relevant to sales, such as revenue, sales growth, customer
+                        acquisition, and product performance.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <h2>Interview Bot</h2>
+                    <p>Identified key performance indicators (KPIs) relevant to sales, such as revenue, sales growth, customer
+                        acquisition, and product performance.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <h2>Interactive Sales Dashboard</h2>
+                    <p>Identified key performance indicators (KPIs) relevant to sales, such as revenue, sales growth, customer
+                        acquisition, and product performance.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <h2>Web App for Autonomous Car Threat Analysis</h2>
+                    <p>Identified key performance indicators (KPIs) relevant to sales, such as revenue, sales growth, customer
+                        acquisition, and product performance.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+
+    </div> -->
+    <!-- ------------------------------Portfolio----------------------- -->
+     <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="Images/fpga-layout-final.png">
+                    <div class="layer">
+                        <h3>FPGA Layout Generation</h3>
+                        <p>-- Developed and implemented novel Simulated Annealing and Evolutionary Strategy algorithms to efficiently
+                            solve the layout generation problem based on micro-slots.</p>
+                        <a href="https://github.com/Yashwanth4/A-Comparison-of-Algorithms-for-the-Generation-of-Layouts-based-on-Reconfigurable-Slots-on-FPGAs"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/CV-AFO-final.png" >
+                    <div class="layer"> 
+                        <h3>CV - AFO Matching</h3>
+                        <p>-- Led CV matching application development, utilizing semantic matching with a German BERT model for
+                            effective job requirement matching.</p>
+                        <p>-- Conducted insightful exploratory data analysis (EDA) to understand data and its nature.</p>
+                        <p>-- Ensured precise data cleaning and loading, rigorous model training, and testing for enhanced performance.</p>
+                        <!-- <a href="#"><i class="fa-solid fa-link"></i></a> -->
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/comment-code-final.jpg" >
+                    <div class="layer">
+                        <h3>Comment Your Code</h3>
+                        <p>-- Developed an AI-powered chatbot leveraging prompt engineering and the GPT API. Users upload Python (.py) files containing functions, and the chatbot automatically generates descriptive comments for each.<br></function></p>
+                        <p>-- Utilized prompt engineering to prompt the GPT API to create explanatory comments above functions within
+                            the uploaded .py files. This automation significantly enhances code documentation and readability.<br></p>   
+                         <!-- <a href="#"><i class="fa-solid fa-link"></i></a> -->
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/dashboard-final.png" >
+                    <div class="layer">
+                        <h3>Interactive Sales Dashboard</h3>
+                        <p>-- Identified key performance indicators (KPIs) relevant to sales, such as revenue, sales growth, customer
+                            acquisition, and product performance. <br></p>
+                        <p>-- Implemented interactive filters and slicers to allow users to customize the dashboard view based on specific
+                            criteria. <br></p>
+                        <a href="https://github.com/Yashwanth4/PowerBI-dashboards"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/ner-final.png" >
+                    <div class="layer">
+                        <h3>CV - Named Entity Recognition</h3>
+                        <p>-- Significantly contributed to an advanced system using Spacy and NLTK for accurate Named Entity Recognition
+                            (NER) in resumes, facilitating efficient skills and role categorization. <br></p>
+                        <p>-- Led comprehensive data cleaning and precise text labeling, ensuring high-quality input for the system. <br></p>
+                        <!-- <a href="https://github.com/Yashwanth4/PowerBI-dashboards"><i class="fa-solid fa-link"></i></a> -->
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/interview-bot-final.jpg" >
+                    <div class="layer">
+                        <h3>Interview BOT</h3>
+                        <p>-- Seamlessly integrated the GPT API as the project's natural language generation engine, enabling dynamic and
+                            personalized question generation based on job descriptions <br></p>
+                        <p>-- Employed the GPT API to assess user responses against job descriptions, facilitating real-time feedback and
+                            suitability valuations. <br></p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/car-threat-upscaled.png" >
+                    <div class="layer">
+                        <h3>BATMAN</h3>
+                        <p>-- Developed a web app using language models (spaCy, BERT, XLNet) for autonomous car developers to analyze
+                            threats, consequences, and solutions. <br></p>
+                        <p>-- Gathered, cleaned, and organized data, with a focus on XLNet implementation and utilization. <br></p>
+                    </div>
+                </div>
+            </div>
+            <!-- <a href="#" class="btn">See more</a> -->
+        </div>
+    </div>
+
+    <!-- ------------------------------contact me ----------------------------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> yashwanthtadakamalla@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +49 17647603884</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/yashwanth-tadakamalla-43a99b127/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Yashwanth4"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="Images/Yashwanth_Tadakamalla_CV.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Yashwanth. Made with <i class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+    }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyx0V6Ew9zTPDmLrhQOXt2kxul_PWquPgSooeFu4daWut7M8dBT0s9y0fphU3qdoWoG/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML="Message Sent Successfully"
+                setTimeout(function(){
+                    msg.innerHTML=""
+                },3000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
